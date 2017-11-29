@@ -1,0 +1,38 @@
+.list-promise
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	max-width: 475px
+	&__item
+		width: 210px
+		margin-bottom: 15px
+	&__title
+		font-size: 30px
+		font-weight: 700
+		margin-bottom: 45px
+		width: 100%
+	&__number
+		font-size: 30px
+		font-weight: 400
+		color: $g_corp-color-1
+		&::before
+			content: "/"
+			display: inline-block
+			font-size: 30px
+			color: #000
+
+
+@media #{$g_tablet}
+	.list-promise
+		&__title
+			text-align: center
+
+@media #{$g_phone}
+	.list-promise
+		justify-content: center
+		&__number
+			min-width: 70px
+		&__item
+			display: flex
+			align-items: center
+			width: 300px

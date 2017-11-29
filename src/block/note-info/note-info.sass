@@ -1,0 +1,50 @@
+.note-info_about-site
+	border: 3px solid $g_corp-color-1
+	max-width: 456px
+	min-height: 310px
+	padding: 55px 55px 55px 95px
+	box-sizing: border-box
+	background-color: #ffffff
+	.note-info
+		&__title
+			font-size: 30px
+			margin-bottom: 15px
+			font-weight: 700
+		&__text
+			font-size: 18px
+			position: relative
+			&::before
+				@include slash-right()
+				position: absolute
+				left: -20px
+
+.note-info_promise-1
+	max-width: 458px
+	min-height: 148px
+	border: 2px solid $g_corp-color-1
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 20px
+	.note-info
+		&__icon
+			font-size: 50px
+			color: #fff
+			margin: 0 5px
+		&__box-icon 
+			display: flex
+		&__box-icon :last-child
+			color: $g_corp-color-1
+
+.note-info_promise-2
+	margin-top: 40px
+	&::before
+		@include slash-right()
+		margin-left: 10px
+		margin-bottom: 20px
+
+		
+@media #{$g_tablet}
+	.note-info_about-site
+		max-width: 400px
+		padding: 25px 25px 25px 65px

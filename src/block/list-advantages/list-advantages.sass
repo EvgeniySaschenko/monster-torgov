@@ -1,0 +1,47 @@
+.list-advantages
+	display: flex
+	justify-content: space-between
+	width: 100%
+	margin-bottom: 50px
+	&__value
+		font-weight: 700
+		font-size: 30px
+		margin-left: 70px
+	&__text
+		margin-left: 70px
+	&__icon
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 25px
+		color: $g_corp-color-1
+		width: 50px
+		height: 50px
+		background-color: #ffffff
+		border-radius: 50%
+		box-shadow: 0 0 10px rgba($g_corp-color-1, .5)
+		position: relative
+		z-index: 2
+		&::after
+			content: ""
+			width: 170px
+			height: 1px
+			background: linear-gradient(to right, $g_corp-color-1, #e9fbf5)
+			display: block
+			position: absolute
+			left: 20px
+
+@media #{$g_tablet}
+	.list-advantages
+		justify-content: space-between
+		flex-wrap: wrap
+		max-width: 750px
+		&__item
+			width: 50%
+			margin-bottom: 30px
+
+@media #{$g_phone}
+	.list-advantages
+		display: block
+		&__item
+			margin: 30px auto 

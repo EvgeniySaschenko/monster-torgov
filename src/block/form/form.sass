@@ -1,0 +1,83 @@
+.form
+	padding: 65px 70px
+	background-color: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__box-left,
+	&__box-right
+		width: 49%
+	&__box-input
+		position: relative
+		margin: 8px 0
+		display: inline-block
+		width: 80%
+	&__input-button
+		height: 56px
+		width: 255px
+		border-radius: 30px
+		border: 2px solid $g_corp-color-1
+		font-weight: 400
+		background-color: #fff
+	&__icon
+		position: absolute
+		right: 15px
+		top: 15px
+		color: #cccdce
+	&__name
+		font-size: 30px
+		font-weight: 700
+		color: $g_corp-color-1
+	&__input-text
+		border: 0
+		width: 100%
+		height: 45px
+		background-color: #f1f1f1
+		box-sizing: border-box
+		padding: 15px
+
+
+.form
+	&_buy-course
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		padding: 0
+		.form
+			&__title-checkbox
+				font-weight: 700
+				margin-top: 30px
+			&__input-button
+				color: #ffffff
+				height: 56px
+				width: 204px
+				background-color: $g_corp-color-1
+				border-radius: 30px
+				border: 0
+				font-weight: 400
+				box-shadow: 0 5px 15px rgba($g_corp-color-1, .6)
+				margin-top: 20px
+	&_subscribe,
+	&_get-book
+		box-shadow: 0 0 15px rgba($g_corp-color-1, .3)
+
+
+@media #{$g_phone}
+	.form
+		padding: 45px 20px
+		&__box-left
+			margin-bottom: 30px
+		&__box-left,
+		&__box-right
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+		&_buy-course
+			width: 100%
+			flex-direction: column
+			align-items: center
+		&__input-text
+			width: 100%

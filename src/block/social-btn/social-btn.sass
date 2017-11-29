@@ -1,0 +1,73 @@
+.social-btn
+	display: flex
+	align-items: center
+	font-weight: 400
+	font-size: 18px
+	&__link
+		&:link,
+		&:visited,
+		&:active,
+		&:hover,
+			color: #ffffff
+	&__icon
+		padding-right: 15px
+	&__item
+		display: flex
+		align-items: center
+
+.social-btn_like
+	font-size: 13px
+	.social-btn
+		&__item_vk
+			.social-btn__like
+					background-color: #5e81a8
+		&__like
+			display: flex
+			align-items: center
+			border-radius: 4px
+			padding: 2px 8px
+			cursor: pointer
+		&__icon
+			font-size: 11px
+			padding-right: 8px
+			opacity: .5
+		&__count
+			border-radius: 3px
+			background: #ffffff
+			padding: 2px 4px
+			color: #000000
+			margin-left: 10px
+			position: relative
+			&::before
+				content: ""
+				display: block
+				position: absolute
+				top: 50%
+				left: -4px
+				border-left: 8px solid #ffffff
+				border-right: 8px solid transparent
+				border-top: 8px solid transparent
+				transform: rotate(45deg)
+				margin-top: -2px
+
+.social-btn_counter
+	.social-btn
+		&__item
+			margin-right: 8px
+			padding: 2px 5px
+			border-radius: 4px
+			cursor: pointer
+			&_vk
+				.social-btn__icon
+			
+				background-color: #48729e
+			&_fb
+				.social-btn__icon
+				background-color: #3b5998
+		&__icon
+			font-size: 17px
+			padding-right: 7px
+			border-right: 1px solid #6c8eb1
+		&__count
+			font-size: 14px
+			padding: 0 5px

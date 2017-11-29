@@ -1,0 +1,352 @@
+include ../node_modules/bemto.pug/bemto.pug
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+	body
+		.wrapper
+			+b.HEADER.header
+				.container
+					+b.logo
+						+e.IMG.img(src="img/logo.svg")
+						+e.SPAN.text Монстр торгов
+
+
+					+b.NAV.nav(class="_header")
+						+e.INPUT.input-checkbox(class="_btn-burger" type="checkbox" id="btn-burger_header")
+						+e.LABEL.label(class="_btn-burger fa fa-bars" for="btn-burger_header")
+						+e.UL.list#nav_header
+							+e.LI.item
+								+e.I.icon(class="fa fa-user")
+								+e.A.link(href="#about-author") Об авторе
+							+e.LI.item
+								+e.I.icon(class="fa fa-star")
+								+e.A.link(href="#our-results") Наши результаты
+							+e.LI.item
+								+e.I.icon(class="fa fa-users")
+								+e.A.link(href="#team") Команда
+							+e.LI.item
+								+e.I.icon(class="fa fa-graduation-cap")
+								+e.A.link(href="#courses-standart") Курсы
+					
+					+b.contacts(class="_header")
+						+e.A.link(class="_tel" href="tel:+88003002020") 8 800 300 20 20
+						+e.text Звонок по России бесплатный
+
+			+b.SECTION.section(class="_about-site")
+					.container
+						+e.left
+							+e.H2.title Зарабатывайтe <br> на банкротстве
+							+e.P.text В России ежедневно банкротятся десятки и сотни <br> предприятий и физлиц, конфисковываются сотни <br> и тысячи различных товаров. Мы же научим вас <br> получать максимальную выгоду в торгах <br> по банкротству.
+							+b.BUTTON.button(class="_buy-course") Купить курс
+							
+						+e.right
+							+b.note-info_about-site
+								+e.H2.title Мы знаем <br> секрет успеха
+								+e.P.text Узнай как <b> стать монстром торгов </b> по банкротству и покупать недвижимость и автомобили на торгах <b> за 10% от их стоимости </b>
+
+			+b.SECTION.section(class="_about-author" id="about-author")
+				.container
+					+e.numder 01
+					+e.left
+						+e.H2.title Об авторе <br> курса Константине <br> Веселове
+						+e.P.text Руководитель и хедлайнер, проекта <b> «Лига Аукционов» </b>, который включает в себя обучение, собственную Биржу торгов <b> «Тендерс» </b> и собственный Хедж фонд. Автор двух обучающих курсов <b> «Бизнес на банкротстве» </b> и <b> «Торги  для всех» </b> и книги <b> «Монстры Торгов».</b> 
+						+e.P.text Совершил <b> более 300 сделок на торгах </b> по банкротству, гос.конфискату и залоговых аукционах на сумму <b> более 1 000 000 000 рублей.</b> 
+						+e.P.text Экономист, юрист со стажем работы более 8 лет в сфере финансов и банкротств. <b> Руководствуясь своей методикой он выиграл не один десяток лотов. </b>
+
+					+e.right
+						+b.video
+							+e.IFRAME.iframe(src="https://youtu.be/TCGUSEYiIvg")
+							+e.box-text
+								+e.col
+									+e.icon(class="fa fa-graduation-cap")
+								+e.col
+									+e.title Конcтантин Веселов об авторском курсе
+									+e.text Короткое видео-описание того, чему вы научитесь <br> пройдя данный курс
+
+			+b.SECTION.section(class="_our-results"  id="our-results")
+				.container
+					+e.numder 02
+					+e.H2.title Ознакомьтесь с результатами
+					+b.list-advantages
+						+e.item
+							+e.value 100
+							+e.icon(class="fa fa-circle")
+							+e.text человек купили <br> курсы
+						+e.item
+							+e.value 17 918 143 &#8381;
+							+e.icon(class="fa fa-circle")
+							+e.text заработали ученики <br> Константина
+						+e.item
+							+e.value 73
+							+e.icon(class="fa fa-circle")
+							+e.text успешных сделки <br> учеников
+						+e.item
+							+e.value 70
+							+e.icon(class="fa fa-circle")
+							+e.text мастер-классов <br> по РФ
+
+					+b.BUTTON.button(class="_buy-course") Купить курс
+
+			+b.SECTION.section(class="_team" id="team")
+				+b.list-team
+					+e.item_gr-1
+						+e.IMG.img(src="img/team-member-1.png")
+					+e.item_gr-2
+						+e.IMG.img(src="img/team-member-2.png")
+					+e.item_gr-3
+						+e.IMG.img(src="img/team-member-3.png")
+					+e.item_gr-1
+						+e.IMG.img(src="img/team-member-4.png")
+					+e.item_gr-1
+						+e.IMG.img(src="img/team-member-5.png")
+					+e.item_gr-3(class="_box-text")
+						+e.IMG.img(src="img/team-member-6.png")
+						+e.name Алина Куркова
+						+e.text-1 28 лет, Рязань
+						+e.text-2 Заработала на торгах по банкротству <br> 150 000 a в период обучения
+					+e.item_gr-2
+						+e.IMG.img(src="img/team-member-7.png")
+					+e.item_gr-1
+						+e.IMG.img(src="img/team-member-8.png")
+
+			+b.SECTION.section(class="_courses-standart" id="courses-standart")
+				.container
+					+e.numder 03
+					+e.left
+						+e.H2.title Стандартный <br> пакет курса
+						+e.P.text С другой стороны рамки и место обучения кадров требуют от нас анализа модели развития. Равным образом консультация с широким активом способствует подготовки и реализации форм развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+						+e.price-box
+							+e.SPAN.price-name Цена:
+							+e.SPAN.price-value 100 000 &#8381;
+						+b.BUTTON.button(class="_buy-course-standart") Купить курс
+
+					+e.right
+						+b.list-promise
+							+e.title Что вы получите <br> пройдя курс «Стандарт»
+							+e.item
+								+e.number 01
+								+e.text Только <b> лучшие технологии </b><br> работы на аукционах по <br> банкротству
+							+e.item
+								+e.number 02
+								+e.text Находить самому <br> и покупать <b> ликвидные <br> объекты </b> на торгах
+							+e.item
+								+e.number 03
+								+e.text Научитесь забирать <b> 100% <br> прибыль </b> с продажи каждого объекта
+							+e.item
+								+e.number 04
+								+e.text Кардинально измените <br> свою <b> жизнь к лучшему </b>
+
+			+b.SECTION.section(class="_courses-vip")
+				.container
+					+e.numder 04
+					+e.left
+						+e.H2.title VIP пакет <br> курса
+						+e.P.text С другой стороны рамки и место обучения кадров требуют от нас анализа модели развития. Равным образом консультация с широким активом способствует подготовки и реализации форм развития. Повседневная практика показывает, что консультация с широким активом играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации новых предложений. Повседневная практика показывает, что консультация с широким активом требуют определения и уточнения позиций, занимаемых участниками в отношении /поставленных задач. Не следует, однако забывать, что реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.
+						+e.price-box
+							+e.SPAN.price-name Цена:
+							+e.SPAN.price-value 200 000 &#8381;
+						+b.BUTTON.button(class="_buy-course-vip") Купить курс
+
+					+e.right
+						+b.list-promise
+							+e.title Пройдя курс VIP, вы станете <br> экспертами и будете уметь
+							+e.item
+								+e.number 01
+								+e.text <b> Полная база </b> знаний <br> о любых видах торгов
+							+e.item
+								+e.number 02
+								+e.text 30 часов <b> практических <br> занятий </b> с Константином
+							+e.item
+								+e.number 03
+								+e.text <b> 70 уроков </b> по торгам
+							+e.item
+								+e.number 04
+								+e.text <b> Онлайн </b> техподдержка
+							+e.item
+								+e.number 05
+								+e.text Тонкости, нюансы <br> и фишки от <b> опытных <br> игроков-инвесторов </b>
+							+e.item
+								+e.number 06
+								+e.text <b> Живые встречи </b><br> с лучшими экспертами
+
+			+b.SECTION.section(class="_advantages")
+				.container
+					+e.numder 05
+					+e.H2.title Наши курсы — уникальны
+					+b.list-advantages
+						+e.item
+							+e.value 60%
+							+e.icon(class="fa fa-circle")
+							+e.text посетителей <br> покупают курсы
+						+e.item
+							+e.value 4000
+							+e.icon(class="fa fa-circle")
+							+e.text посещений <br> в неделю
+						+e.item
+							+e.value 120 000
+							+e.icon(class="fa fa-circle")
+							+e.text успешных сделки <br> учеников
+						+e.item
+							+e.value 35
+							+e.icon(class="fa fa-circle")
+							+e.text уникальных методик <br> разработано учениками <br> Константина
+
+			+b.SECTION.section(class="_promise-1")
+				.container
+					+e.numder 06
+					+e.left
+						+e.H2.title Ваш успех <br> совсем близко
+						+b.note-info(class="_promise-1")
+							+e.box-icon
+								+e.I.icon(class="fa fa-male")
+								+e.I.icon(class="fa fa-male")
+								+e.I.icon(class="fa fa-male")
+							+e.P.text Каждый третий ученик Константина <br> Веселова утраивает свой <br> финансовый результат за квартал
+						+e.P.text Ваш результат будет зависеть от вида реализованных объектов и от ваших конкретных действий, которые вы препринимаете в течение или после прохождения курса
+
+					+e.right
+						+b.FOPM.form(class="_subscribe" id="form_subscribe")
+							+e.name 19 бесплатных уроков
+							+e.description для начинающих о торгах по банкротству
+							+e.box-input
+								+e.icon(class="fa fa-user")
+								+e.INPUT.input-text(class="_name" name="name" placeholder="Ваше имя" required)
+							+e.box-input
+								+e.icon(class="fa fa-envelope")
+								+e.INPUT.input-text(class="_mail" name="mail" type="mail" placeholder="Ваш e-mail" required)
+							+e.box-input
+								+e.INPUT.input-checkbox(class="_agree" id="checkbox__agree_subscribe" name="agree" type="checkbox") 
+								+e.LABEL.label-checkbox(class="_agree" for="checkbox__agree_subscribe") Я даю согласие на обработку моих персональных данных
+							+e.INPUT.input-button(class="_submit" type="submit" value="Подписаться на рассылку")
+
+			+b.SECTION.section(class="_promise-2")
+						.container
+							+e.left
+								+e.H2.title Пройдя курс, вы <br> поймете, что торги <br> по банкротству —  <br> это просто!
+							+e.right
+								+b.note-info(class="_promise-2")
+									+e.text Этот курс прошли сотни учеников до вас. <br> Каждый из них провел минимум одну сделку <br> на торгах по банкротству. 
+									+e.text <b> Если они смогли — сможете и вы! </b>
+
+			+b.SECTION.section(class="_get-book")
+				.container
+					+e.left
+						+b.IMG.img-book(src="img/book.png")
+					+e.right
+						+b.FOPM.form(class="_get-book" id="form_get-book")
+							+e.description Бесплатная книга
+							+e.name «Монстр аукционов»
+							+e.box-input
+								+e.icon(class="fa fa-user")
+								+e.INPUT.input-text(class="_name" name="name" placeholder="Ваше имя" required)
+							+e.box-input
+								+e.icon(class="fa fa-envelope")
+								+e.INPUT.input-text(class="_mail" name="mail" type="mail" placeholder="Ваш e-mail" required)
+							+e.box-input
+								+e.INPUT.input-checkbox(class="_agree" id="checkbox__agree_get-book" name="agree" type="checkbox") 
+								+e.LABEL.label-checkbox(class="_agree" for="checkbox__agree_get-book") Я даю согласие на обработку моих персональных данных
+							+e.INPUT.input-button(class="_form-get-book" type="submit" value="Получить книгу")
+
+			+b.SECTION.section(class="_buy-course")
+				.container
+					+e.numder 07
+					+e.H2.title Оставьте заявку <br> на покупку курса
+					+b.FOPM.form(class="_buy-course" id="form_buy-course")
+						+e.box-left
+							+e.box-input
+								+e.icon(class="fa fa-user")
+								+e.INPUT.input-text(class="_name" name="name" placeholder="Ваше имя" required)
+							+e.box-input
+								+e.icon(class="fa fa-map-marker")
+								+e.INPUT.input-text(class="_city" name="city" placeholder="Ваш город" required)
+							+e.box-input
+								+e.icon(class="fa fa-envelope")
+								+e.INPUT.input-text(class="_mail" name="mail" type="mail" placeholder="Ваш e-mail" required)
+							+e.box-input
+								+e.icon(class="fa fa-phone")
+								+e.INPUT.input-text(class="_phone" name="phone" placeholder="Ваш телефон" required)
+							+e.INPUT.input-button(class="_form-buy-course" type="submit" value="Оставить заявку")
+							
+
+						+e.box-right
+							+e.box-input
+								+e.INPUT.input-checkbox(class="_agree" id="checkbox__agree_form-buy-course" name="agree" type="checkbox" required) 
+								+e.LABEL.label-checkbox(class="_agree" for="checkbox__agree_form-buy-course") Нажимая на кнопку «Оставить заявку», я даю согласие на обработку <br> персональных данных и соглашаюсь с условиями оферты и политики <br> конфиденциальности.
+							+e.title-checkbox Согласие на получение рекламной информации от Константина Веселова
+							+e.box-input
+								+e.INPUT.input-checkbox(class="_sms-dispatch" id="checkbox__sms-dispatch_form-buy-course" name="sms-dispatch" type="checkbox") 
+								+e.LABEL.label-checkbox(class="_sms-dispatch" for="checkbox__sms-dispatch_form-buy-course") SMS рассылка о мероприятиях и /или иных услугах
+							+e.box-input
+								+e.INPUT.input-checkbox(class="_mail-dispatch" id="checkbox__mail-dispatch_form-buy-course" name="mail-dispatch" type="checkbox") 
+								+e.LABEL.label-checkbox(class="_mail-dispatch" for="checkbox__mail-dispatch_form-buy-course") E-mail рассылка о мероприятиях и /или иных услугах
+							+e.box-input
+								+e.INPUT.input-checkbox(class="_receive-calls" id="checkbox__receive-calls_form-buy-course" name="receive-calls" type="checkbox") 
+								+e.LABEL.label-checkbox(class="_receive-calls" for="checkbox__receive-calls_form-buy-course") Я хочу получать звонки о мероприятиях и/или иных услугах
+
+			+b.FOOTER.footer
+				.container
+					+e.col_1
+						+e.item
+							+e.SPAN.name ИП
+							+e.SPAN.value Константин Алексеевич Малой
+						+e.item
+							+e.SPAN.name ИНН
+							+e.SPAN.value 123456789012
+						+e.item
+							+e.SPAN.name КПП
+							+e.SPAN.value 123456789
+						+e.item
+							+e.SPAN.name ОГРН
+							+e.SPAN.value 123141231
+						+e.item_owners
+							+e.SPAN.name Сайт принадлежит ресурсу 
+							+e.SPAN.value «ЛИГА АУКЦИОНОВ»
+
+					+e.col_2
+						+e.item
+							+e.A.link(href="") Политика конфиденциальности
+						+e.item
+							+e.A.link(href="") Договор оферты
+						+e.item
+							+e.SPAN.name E-mail
+							+e.A.link(href="mailto:info@example.com") info@example.com
+						+e.item
+							+b.social-btn
+								+e.A.link(href="#")
+									+e.I.icon(class="fa fa-vk")
+								+e.A.link(href="#")
+									+e.I.icon(class="fa fa-facebook-official")
+								+e.A.link(href="#")
+									+e.I.icon(class="fa fa-instagram")
+								+e.A.link(href="#")
+									+e.I.icon(class="fa fa-google-plus-square")
+
+					+e.col_3
+						+e.item
+							+e.name Оцените курс
+							+b.social-btn_like
+								+e.item_vk
+									+e.like
+										+e.I.icon(class="fa fa-heart")
+										+e.SPAN.text Мне нравится
+									+e.count 738K
+						+e.item
+							+e.name Поделиться с друзьями
+						+e.item
+							+b.social-btn_counter
+								+e.item_vk
+									+e.I.icon(class="fa fa-vk")
+									+e.count 936
+								+e.item_fb
+									+e.I.icon(class="fa fa-facebook")
+									+e.count 495
+						+e.item 2016 monstrtorgov.com <br> Все права защищены
+
+			link(rel="stylesheet", href="css/style.css")
+			script(src="https://use.fontawesome.com/be2e8d8d61.js")
+			script(src="js/app.js")

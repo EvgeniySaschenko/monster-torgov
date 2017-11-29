@@ -1,0 +1,150 @@
+.section
+	padding: 100px 0
+	.container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__left
+		max-width: 49%
+	&__right
+		max-width: 49%
+	&__title
+		font-size: 60px
+		font-weight: 700
+		margin-bottom: 50px
+	&__text	
+		margin-bottom: 30px
+	&__numder
+		min-width: 100%
+		font-weight: 700
+		font-size: 24px
+		position: relative
+		left: 10px
+		margin-bottom: 55px
+		&::before
+			@include slash-right()
+			margin-right: 10px
+	&__price-box
+		margin-bottom: 30px
+	&__price-name
+		font-size: 24px
+		padding-right: 10px
+	&__price-value
+		font-size: 36px
+		font-weight: 700
+
+/* About site */
+.section_about-site
+	position: relative
+	&::before
+		@include bg-section(50%, 50%, '../img/bg-header.png', .1, cover)
+	&::after
+		@include bg-section(200%, 100%, '../img/rings.png', .6)
+	.section
+		&__left
+			min-width: 49%
+		&__right
+			min-width: 49%
+			.section
+				&__text
+					position: relative
+					margin-left: 40px
+					&::before
+						@include slash-right()
+						position: absolute
+						top: 5px
+						left: -20px
+			.button
+					margin-left: 40px
+
+/* About author */
+.section_about-author
+	background-color: #ffffff
+	position: relative
+	z-index: 2
+	&::after
+		@include bg-section(300%, 150%, '../img/rings.png', .4)
+
+/* our-results */
+.section_our-results
+	position: relative
+	&::before
+		@include bg-section()
+	.container
+		flex-direction: column
+		align-items: center
+
+.section_courses-vip
+	background: #ffffff
+	position: relative
+	z-index: 2
+	&::after
+		@include bg-section(-200%, 200%, '../img/rings.png', .6)
+
+
+/* Advantages */
+.section_advantages
+	position: relative
+	&::before
+		@include bg-section()
+		height: 170%
+
+
+/* tesm */
+.section_team
+	padding: 0
+
+/* Promise 2 */
+.section_promise-2
+	position: relative
+	&::before
+		@include bg-section(50%, 0, '../img/bg-promise-2.png', 1, cover)
+		filter: grayscale(100%)
+
+/* get-book */
+.section_get-book
+	position: relative
+	&::before
+		@include bg-section(50%, 100%)
+
+/* buy-course */
+.section_buy-course
+	background-color: #ffffff
+	position: relative
+	z-index: 2
+	&::after
+		@include bg-section(250%, 125%, '../img/rings.png', .6)
+
+
+
+@media #{$g_tablet}
+	.section
+		padding: 80px 0
+		&__left
+			min-width: 100%
+			display: flex
+			align-items: center
+			flex-direction: column
+		&__right
+			min-width: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-top: 20px
+		&__title
+			font-size: 45px
+			margin-bottom: 25px
+			text-align: center
+
+@media #{$g_phone}
+	.section
+		.container
+			justify-content: center
+
+	/* About site */
+	.section_about-site
+		.section
+			&__left
+				min-width: 100%
+			&__right
+				min-width: 100%

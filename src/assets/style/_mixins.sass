@@ -1,0 +1,23 @@
+@mixin slash-right()
+	content: ""
+	height: 50px
+	width: 3px
+	display: inline-block
+	background-color: $g_corp-color-1
+	font-weight: 400
+	transform: rotate(20deg)
+
+@mixin bg-section($bg-x: 50%, $bg-y: 50%, $bg-img: '../img/rings.png', $opacity: 1, $bg-sz: auto)
+	content: ""
+	height: 100%
+	width: 100%
+	display: block
+	background-image: url($bg-img)
+	background-repeat: no-repeat
+	background-position: $bg-x $bg-y
+	background-size: $bg-sz
+	position: absolute
+	top: 0
+	left: 0
+	z-index: -1
+	opacity: $opacity

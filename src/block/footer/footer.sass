@@ -1,0 +1,44 @@
+.footer
+	background-color: $g_corp-color-1
+	color: #ffffff
+	padding: 50px 0 30px
+	position: relative
+	z-index: 2
+	&::before
+		@include bg-section(50%, 25%, '../img/rings.png', .5, auto)
+	.container
+		display: flex
+		justify-content: space-between
+	&__item
+		padding-bottom: 20px
+	&__name
+		padding-right: 10px
+	&__value
+		font-weight: 700
+	&__item_owners
+		.footer
+			&__value
+				display: block
+	&__link
+		&:active,
+		&:hover,
+		&:visited,
+		&:link
+			color: #ffffff
+
+	&__col_2, 
+	&__col_3
+		.footer__name
+			font-weight: 700
+
+@media #{$g_tablet}
+	.footer
+		.container
+			justify-content: center
+		&__col_1, 
+		&__col_3
+			display: none
+		&__col_2
+			display: flex
+			flex-direction: column
+			align-items: center

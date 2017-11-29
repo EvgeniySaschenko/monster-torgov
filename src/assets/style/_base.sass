@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+
+body
+	color: #313438
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 300
+	line-height: 1.5
+	position: relative
+	z-index: -2
+
+a
+	&:active,
+	&:hover,
+	&:visited,
+	&:link
+		color: #313438
+		text-decoration: none
+
+b
+	font-weight: 700
+
+.wrapper
+	max-width: 1920px
+	margin: 0 auto
+	background-image: url(../img/bg-site.png)
+	background-position: 50% 0
+	position: relative
+	z-index: -2
+
+.container
+	max-width: 1140px
+	margin: 0 auto
+
+@media #{$g_pc}
+	.container
+		padding: 0 15px
+	br
+		display: none
+
+@media #{$g_phone}
+	body
+		line-height: 1.2
