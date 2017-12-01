@@ -21,7 +21,6 @@
 		border-radius: 50%
 		box-shadow: 0 0 10px rgba($g_corp-color-1, .5)
 		position: relative
-		z-index: 2
 		&::after
 			content: ""
 			width: 170px
@@ -30,6 +29,10 @@
 			display: block
 			position: absolute
 			left: 20px
+			z-index: -1
+		&::before
+			z-index: 1
+			position: relative
 
 @media #{$g_tablet}
 	.list-advantages
