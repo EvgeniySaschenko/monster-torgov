@@ -19,9 +19,22 @@
 		margin-right: 20px
 	&__iframe
 		width: 100%
+		height: 100%
+		margin-bottom: 30px
+		position: absolute
+		top: 0
+		left: 0
+		display: none
+	&__label
+		width: 100%
 		height: 0
 		padding-bottom: 56.25%
 		background-image: url(../img/bg-video.png)
 		background-repeat: no-repeat
 		background-size: 100% 100%
-		margin-bottom: 30px
+		position: relative
+		display: block
+	&__input-checkbox
+		display: none
+	#video_about-author:checked ~ &__label &__iframe
+		display: block

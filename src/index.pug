@@ -60,7 +60,9 @@ html(lang="en")
 
 					+e.right
 						+b.video
-							+e.IFRAME.iframe(src="https://youtu.be/TCGUSEYiIvg")
+							+e.INPUT.input-checkbox(type="checkbox" id="video_about-author")
+							+e.LABEL.label(for="video_about-author")
+								+e.IFRAME.iframe(src="https://www.youtube.com/embed/TCGUSEYiIvg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
 							+e.box-text
 								+e.col
 									+e.icon(class="fa fa-graduation-cap")
