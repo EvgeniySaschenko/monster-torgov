@@ -86,7 +86,7 @@ gulp.task('sprite', () => {
 		imgName: 'sprite.png',
 		cssName: 'sprite.css',
 		cssVarMap: (sprite) => {
-			sprite.name = 'my_' + sprite.name;
+			sprite.name = sprite.name;
 		}
 	}));
 	return spriteData.pipe( 
